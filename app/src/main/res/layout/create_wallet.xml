@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/ctc_backgrount"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="21dp"
+            android:gravity="center"
+            android:layout_height="30dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:background="@mipmap/icon_1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="60dp"
+                android:gravity="center"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:textColor="#D9D9D9"
+                android:text="------------"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:background="@mipmap/icon_02"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="60dp"
+                android:gravity="center"
+                android:layout_marginLeft="6dp"
+                android:textColor="#D9D9D9"
+                android:layout_marginRight="6dp"
+                android:text="------------"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:background="@mipmap/icon_03"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/create_wallet"
+                android:textSize="14sp"
+                android:textColor="#2F5EB2"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/save_seed"
+                android:layout_marginLeft="40dp"
+                android:textSize="14sp"
+
+                android:textColor="#BDBDBD"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/move_seed"
+                android:textSize="14sp"
+                android:layout_marginLeft="35dp"
+                android:textColor="#BDBDBD"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/wallet_name"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:hint="@string/input_wallet_name_tip"
+            android:background="@color/white"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="7dp"
+            android:background="@color/ctc_backgrount"
+            android:layout_height="1dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:id="@+id/wallet_pw"
+            android:inputType="textPassword"
+            android:password="true"
+            android:singleLine="true"
+            android:hint="@string/input_pw"
+            android:background="@color/white"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="7dp"
+            android:background="@color/ctc_backgrount"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:textColor="#FC5D55"
+            android:id="@+id/wallet_pw_error_tip"
+            android:textSize="13sp"
+            android:text="@string/pw_error_tip"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/wallet_pw_again"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:password="true"
+            android:hint="@string/input_pw_again"
+            android:background="@color/white"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="7dp"
+            android:background="@color/ctc_backgrount"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="12dp"
+                android:button="@null"
+                android:checked="true"
+                android:id="@+id/agreement_cb"
+                android:background="@drawable/agreement_check"
+                android:layout_height="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="13sp"
+                android:textColor="#505050 "
+                android:text="@string/agree_agreement_tip"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#2F5EB2 "
+                android:text="@string/create_secret"
+                android:id="@+id/agreement_jump"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="11dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:checked="true"
+                android:layout_marginTop="2dp"
+                android:background="@mipmap/icon_alert_small"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textSize="14sp"
+                android:layout_gravity="start"
+                android:textColor="#FF8603 "
+                android:text="@string/pw_tip"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:background="#2F5EB2"
+            android:id="@+id/account_create"
+            android:textAllCaps="false"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="15dp"
+            android:textSize="18sp"
+            android:text="@string/create_wallet"
+            android:layout_height="44dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="27dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="17sp"
+                android:id="@+id/account_restore"
+                android:textColor="#2F5EB2"
+                android:text="@string/import_wallet"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:background="@mipmap/icon_arrow_blue"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

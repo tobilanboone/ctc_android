@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/ctc_backgrount"
+        android:layout_height="1dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/h80"
+        android:layout_marginLeft="@dimen/h16"
+        android:layout_marginRight="@dimen/h16"
+        android:layout_marginTop="-1dp"
+        android:layout_weight="27"
+        android:orientation="vertical"
+        android:padding="@dimen/h6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/h_distance_20"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/coin_icon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@mipmap/icon_cg" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tran_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CTC"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:id="@+id/tran_type"
+                android:background="@mipmap/icon_zc"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/coin_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CTC"
+                android:textColor="@color/black"
+                android:textSize="@dimen/p20" />
+        </LinearLayout>
+        <android.support.v7.widget.LinearLayoutCompat
+            style="@style/trade_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to_address"
+                android:textColor="@color/common_color"
+                android:textSize="@dimen/p18" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/pay_address"
+                style="@style/trade_text"
+                android:layout_width="0dp"
+                android:textSize="@dimen/p14"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            style="@style/trade_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/trade_address"
+                android:textColor="@color/common_color"
+                android:textSize="@dimen/p18" />
+            <!--
+             <item name="android:layout_marginLeft">@dimen/h10</item>
+                    <item name="android:layout_weight">1</item>
+                    <item name="android:gravity">right</item>
+                    <item name="android:textColor">@color/gray</item>
+                    <item name="android:textSize">@dimen/p18</item>-->
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/receive_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/p14" />
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            style="@style/trade_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/trade_link"
+                android:textColor="@color/common_color"
+                android:textSize="@dimen/p18" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/trade_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/h_distance_20"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:maxLines="2"
+                android:textColor="@color/appColor"
+                android:textSize="@dimen/p12" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            style="@style/trade_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/fee"
+                android:textColor="@color/common_color"
+                android:textSize="@dimen/p18" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/trade_text"
+                android:layout_width="0dp"
+                android:text="0.01ctc"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            style="@style/trade_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/trade_message"
+                android:textColor="@color/common_color"
+                android:textSize="@dimen/p18" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/trade_remark"
+                style="@style/trade_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            style="@style/trade_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trade_time"
+                android:textColor="@color/common_color"
+                android:textSize="@dimen/p18" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/trade_time"
+                style="@style/trade_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <!--<android.support.v7.widget.LinearLayoutCompat-->
+            <!--style="@style/trade_detail"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp">-->
+
+            <!--<android.support.v7.widget.AppCompatTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="@string/trade_kind"-->
+                <!--android:textColor="@color/common_color"-->
+                <!--android:textSize="@dimen/p18" />-->
+
+            <!--<android.support.v7.widget.AppCompatTextView-->
+                <!--android:id="@+id/trade_kind"-->
+                <!--style="@style/trade_text"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</android.support.v7.widget.LinearLayoutCompat>-->
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:id="@+id/head"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:paddingBottom="@dimen/h4"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_jyjl">
+
+        <!--<android.support.v7.widget.AppCompatImageView
+            android:id="@+id/coin_icon"
+            android:layout_width="@dimen/h40"
+            android:layout_height="@dimen/h40"
+            android:layout_margin="@dimen/h10"
+            android:src="@mipmap/home_icon_ctc" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/coin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h40"
+            android:layout_alignBaseline="@+id/coin_icon"
+            android:layout_marginTop="@dimen/h10"
+            android:layout_toRightOf="@+id/coin_icon"
+            android:gravity="center"
+            android:textColor="@color/_6"
+            android:text="UBTC"
+            android:textSize="@dimen/p18" />
+-->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/coin_money"
+            android:layout_width="wrap_content"
+            android:text="1000CTC"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:textColor="#2F5EB2"
+            android:textSize="36sp" />
+
+
+
+        <TextView
+            android:id="@+id/coin_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/single_line_text"
+            android:text="≈1000"
+            android:textColor="#505050"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="23dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="4dp"
+            android:background="#2F5EB2"
+            android:layout_height="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="14dp"
+            android:text="@string/new_tran"
+            android:textColor="#333333"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/ctc_backgrount"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1dp"/>
+</android.support.v7.widget.LinearLayoutCompat>

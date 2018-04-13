@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/ctc_backgrount"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@color/ctc_textColor"
+                android:text="@string/import_wallet_by_seed_tip"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#2F64C4"
+                android:id="@+id/seed_mean"
+                android:text="@string/seed_mean"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:background="#F0F0F0 "
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:id="@+id/seed"
+            android:textSize="15sp"
+            android:hint="@string/input_seed_tip"
+            android:layout_height="137dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/ctc_textColor"
+            android:text="@string/setting_wallet_pw_tip"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/password"
+                android:textColor="@color/ctc_textColor"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/wallet_pw"
+                android:inputType="textPassword"
+                android:password="true"
+                android:singleLine="true"
+                android:hint="@string/input_pw"
+                android:background="@color/white"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="7dp"
+            android:background="@color/ctc_backgrount"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/sure_password"
+                android:textColor="@color/ctc_textColor"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:inputType="textPassword"
+                android:password="true"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/wallet_pw_again"
+                android:singleLine="true"
+                android:hint="@string/input_pw_again"
+                android:background="@color/white"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="7dp"
+            android:background="@color/ctc_backgrount"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="12dp"
+                android:button="@null"
+                android:checked="true"
+                android:id="@+id/agreement_cb"
+                android:background="@drawable/agreement_check"
+                android:layout_height="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="13sp"
+                android:textColor="#505050 "
+                android:text="@string/agree_agreement_tip"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#2F5EB2 "
+                android:text="@string/create_secret"
+                android:id="@+id/agreement_jump"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:background="#2F5EB2"
+            android:id="@+id/import_btn"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:text="@string/begin_import"
+            android:layout_height="44dp" />
+    </LinearLayout>
+</LinearLayout>

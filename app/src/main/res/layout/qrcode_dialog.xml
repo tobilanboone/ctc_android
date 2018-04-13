@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@drawable/qrcode_dialog"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="21dp"
+            android:textSize="16sp"
+            android:textColor="#303030"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/camera_tip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/camera_content_tip"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/ctc_backgrount"
+            android:layout_marginTop="12dp"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#2F64C4"
+            android:textSize="16sp"
+            android:text="@string/sure"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_height="54dp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

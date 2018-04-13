@@ -1,0 +1,471 @@
+<resources>
+    <string name="app_name">AnyBit</string>
+    <string name="app_name_upper">ANYBIT</string>
+    <string name="view_empty">no data~</string>
+    <string name="share">share</string>
+    <string name="empty_record">No trade record yet~</string>
+    <string name="empty_contact"> No Contacts</string>
+    <string name="view_loading">loading...~</string>
+    <string name="view_no_network">Lack of network~</string>
+    <string name="view_network_error">Network connection exception</string>
+    <string name="service_fail">Network connection exception</string>
+    <string name="word_tips">Word tips</string>
+    <string name="error_could_not_read_wallet">could not read wallet</string>
+    <!--创建钱包-->
+    <string name="account_create">Create Wallet </string>
+    <string name="account_name">Set the name of wallet</string>
+    <string name="account_restore">Restore Wallet</string>
+    <string name="account_restore_tips">please restore a currency at least</string>
+    <string name="account_select_tips">Please choose a currency</string>
+    <string name="account_seed">Please enter the mnemonic words</string>
+    <string name="account_pw">Please set transaction password</string>
+
+    <string name="account_input_pw">Please Enter Trading Password</string>
+
+    <string name="account_login_pw">Please set login password</string>
+    <string name="restore_pw">Please reset six trade passwords</string>
+    <string name="account_pw_tip">Password is important , otherwise you can not trade</string>
+
+    <string name="account_login_tip">Please remember the login password</string>
+
+    <string name="coin_add">Add Currency</string>
+    <!--钱包-->
+    <string name="setting_nick">Wallet Name</string>
+    <string name="setting_head">Head</string>
+    <string name="wallet_money">Total Assets</string>
+    <string name="wallet_pay">Send</string>
+    <string name="wallet_receipt">Receive</string>
+    <string name="wallet_coin">Currency</string>
+    <string name="wallet_asset">Assets</string>
+    <string name="wallet_all">Amount</string>
+    <string name="wallet_freeze">Frozen amount</string>
+
+    <string name="wallet_restore">Restore Wallet</string>
+    <string name="candy">Candy</string>
+    <string name="news">News</string>
+
+
+    <string-array name="sort_item">
+        <item>Assets</item>
+        <item>Candy</item>
+        <item>News</item>
+        <item>Profile</item>
+    </string-array>
+    <!-- restoredelegate -->
+    <string name="seed_input">Please enter the mnemonic</string>
+
+    <string name="restore_input">Please enter the mnemonic words that was recorded in the process of creating a wallet</string>
+    <string name="restore_error_checksum">Confirm failed，please examine your mnemonic words</string>
+    <string name="send_safe">Make sure your mnemonic word is safe.</string>
+    <!-- seeddelegaet -->
+    <string name="word_copy">Please make sure that the following wallet mnemonic word has been saved and properly kept for retrieving the wallet created this time.</string>
+    <string name="word_new">Touch the screen to generate new mnemonic word</string>
+    <string name="error_generic">An error generates while executing the instruction</string>
+    <string name="word_next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="sure">Confirm</string>
+    <!-- Errors -->
+
+    <!-- tips -->
+    <string name="tips_exit">Press again for exiting from the system</string>
+
+
+    <!--交易-->
+    <string name="trade_tip">Warm Prompt</string>
+    <string name="trade_time">Time</string>
+    <string name="trade_pay">Payment</string>
+    <string name="trade_id">The inside address has been copied to the pasteboard</string>
+    <string name="trade_address_error">Address is incorrect, please check.</string>
+
+    <string name="trade_money_lack">No sufficient funds, please reenter the amount</string>
+
+    <string name="trade_fail">Trade creation fails</string>
+
+    <string name="trade_receive">Receive</string>
+    <string name="trade_address">To</string>
+    <string name="to_address">From</string>
+    <string name="fee">Mining Fee</string>
+
+    <string name="trade_kind">Ttype</string>
+
+    <string name="trade_message">Remarks</string>
+
+    <string name="trade_link">Trade ID</string>
+    <string name="trade_tip_content">This page shows that trade processing is completed, but does not represent the success of this trade, and the specific trade status is inquired in the trade information list.</string>
+    <string name="setting_version_now"> Current version：v</string>
+
+
+    <string name="scan_qr_code">Scan</string>
+    <string name="tips_cash">An optimum  expense fee has been chosen for you. A higher fee could speed up the process.</string>
+
+    <string name="tips_finish"> Please complete the information.</string>
+    <string name="setting_personal">Personal center</string>
+
+    <string name="tips_copy">Copied</string>
+
+    <string name="tips_cash_lack">Service charge cannot be less than one in a million</string>
+
+    <string name="button_skip">Skip</string>
+    <string name="mail_box">Are you sure to skip this step?</string>
+
+    <string name="back">Back</string>
+    <string name="mail_address">Do not skip this step for your wallet safety </string>
+    <string name="tips_name_empty">The name of the wallet can not be empty</string>
+    <string name="tips_name_repetition">Wallet name repeats</string>
+    <string name="copy">Copy</string>
+    <!-- FinalizeWalletRestorationFragment -->
+    <string name="wallet_restoration">The wallet is being restoring, please wait patiently</string>
+
+    <string name="wallet_restoration_master_key">Create the master key</string>
+
+    <string name="wallet_restoration_coin">Create the private key for %1$s</string>
+
+    <string name="wallet_restoration_error">The wallet can not be restored.\n\n%1$s</string>
+
+    <!--error-->
+    <string name="error_camera">The camera can not be accessed</string>
+    <string name="error_pw">Password does not match，please try again</string>
+    <string name="error_state">Network access exception, please try again later</string>
+
+
+    <!--密码-->
+    <string name="input_word">Please set payment code</string>
+
+    <string name="input_pw">Password</string>
+
+    <string name="input_login">Login Password</string>
+
+    <!--收付款-->
+    <string name="copy_address">Copy address</string>
+
+    <string name="address">Address</string>
+    <string name="money">Amount</string>
+
+    <string name="remark">Remark</string>
+
+    <string name="remind">Add a note</string>
+
+    <string name="cash">Fee</string>
+
+    <string name="copy_address_ok">Copied</string>
+
+    <string name="copy_private_ok">Copied</string>
+    <string name="copy_pub_ok">Copied</string>
+
+    <string name="cancel">Cancel</string>
+
+    <string name="next">NEXT</string>
+    <string name="setting_money">Set receivable amount </string>
+
+    <string name="error_money">Please enter the correct amount</string>
+
+    <!--设置-->
+    <string name="camera_tips">This function requires camera permission</string>
+    <string name="camera_sure">Please allow the invocation of system camera</string>
+    <string name="setting">Settings</string>
+    <string name="setting_delete">Delete Wallet</string>
+    <string name="loading_">loading...</string>
+    <string name="setting_deal">Terms of Use</string>
+    <string name="setting_secret">Privacy Policy</string>
+    <string name="setting_connect">Contact Us</string>
+    <string name="setting_share">Recommend and Share</string>
+    <string name="setting_login_pw">Change Login Password</string>
+    <string name="setting_error_pw">Old password is incorrect</string>
+    <string name="setting_download">https://anybit.io/anybit.apk</string>
+    <string name="setting_error_two">Entered passwords differ</string>
+
+    <string name="setting_login">Re-login When App is Open </string>
+
+    <string name="setting_pw">Change Trading Password</string>
+
+    <string name="setting_default">Default Currency</string>
+    <string name="setting_update">Updates</string>
+    <string name="tips_fee_much">Exorbitant fees</string>
+    <string name="setting_language">Language</string>
+    <string name="setting_key">Export Private Key</string>
+    <string name="setting_updating">loading...</string>
+
+    <string name="setting_update_now">Update to the Latest Version</string>
+    <string name="scan">Scan QR Code</string>
+    <string name="scan_qr">QR Code</string>
+    <string name="setting_update_new_now"> No update available</string>
+
+    <string name="setting_update_content">Release the android version for closed test:  which includes the following functions: \n\n 1. support the creation and restoration of wallet \n2. Create the wallet based on mnemonic word \n 3. Support the basic functions of wallet: payments receipts, linkman, information, trade records and details.</string>
+
+    <string name="setting_update_new">Update to version</string>
+
+    <string name="setting_update_">Update</string>
+    <string name="setting_update_tips">Version Release</string>
+    <string name="setting_about_us">About</string>
+    <string name="setting_chinese">简体中文</string>
+    <string name="find_no">This function is not yet available</string>
+
+    <string name="setting_english">English</string>
+    <string name="setting_korean">Korean</string>
+
+    <string name="setting_pw_old">Current password</string>
+    <string name="setting_pw_new">New password</string>
+    <string name="setting_pw_sure">Confirm new password</string>
+    <string name="setting_pw_tip">Please enter six-character numeric password </string>
+    <string name="setting_pw_six">The password is made up of six digits</string>
+
+    <!--交易-->
+    <string name="trade_success">Trade Successfully</string>
+    <string name="record_name">Trading Record</string>
+    <string name="record_unsure">Unconfirmed</string>
+    <string name="trade_state">Status</string>
+    <string name="record_success">Success</string>
+    <string name="setting_login_pw_short">Change password</string>
+    <string name="setting_pw_short">Change password</string>
+    <string name="record_detail">Detail</string>
+    <string name="record_invalid">Invalid</string>
+    <string name="setting_update_new_two">Optimize interface of English version</string>
+    <string name="record_no">There are no transaction records to show</string>
+
+    <string name="market">Markets</string>
+    <!--联系人-->
+    <string name="contact">Contacts</string>
+    <string name="contact_delete">Delete</string>
+    <string name="contact_add">Add contact</string>
+
+    <string name="contact_alter">Alter the contact</string>
+
+    <string name="contact_no">No records</string>
+    <string name="contact_nick">Nickname：</string>
+    <string name="contact_coin">Currency:</string>
+
+    <string name="contact_address">Wallet Address：</string>
+    <string name="contact_input">Please enter the nickname or address</string>
+
+    <!--coinkey-->
+    <string name="ub">UBTC</string>
+    <string name="ub_tips">This is your address and private key of your Anybit wallet. Tick them to copy.</string>
+
+    <string name="ub_key">UBTC Private Key</string>
+    <string name="private_key">Private Key</string>
+    <string name="private_key_tip"> Caution! Anyone that has your address and private key can control all related assets. Do not share them.</string>
+    <array name="waveSideBarLetters">
+        <item>\u0023</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </array>
+
+    <string name="user_name">WeCredit</string>
+    <string name="user_number">186***7266</string>
+    <string name="wallet_tool">Wallet Tools</string>
+    <string name="sys_setting">Settings</string>
+    <string name="help_center">Support</string>
+    <string name="about_us">About</string>
+    <string name="delete_wallet">Delete Wallet</string>
+    <string name="title">title</string>
+    <string name="delete_wallet_tip">Caution!Please confirm that you have backed up your wallet mnemonic in case you lose your assets.</string>
+    <string name="cancle">Cancel</string>
+    <string name="confirm">OK</string>
+    <string name="revise_pw">Change Password</string>
+    <string name="old_pw">Current Password</string>
+    <string name="new_pw">New Password</string>
+    <string name="confirm_pw">Repeat Password</string>
+    <string name="old_pw_hint">Current Password</string>
+    <string name="new_pw_hint">New Password</string>
+    <string name="confirm_pw_hint">Repeat Password</string>
+    <string name="forget_pw_tip">Forget your wallet password? You can reset password by using mnemonic or private key.</string>
+    <string name="import_now">Import</string>
+    <string name="export_private_key">Export Private Key</string>
+    <string name="export_pub_key">Export Public Key</string>
+    <string name="export_keystore">Export Keystore</string>
+    <string name="create_wallet">Create Wallet</string>
+    <string name="import_wallet">Import</string>
+    <string name="select_language">Language</string>
+    <string name="select_icon">Currency Unit</string>
+    <string name="version_tip">1.0</string>
+    <string name="version_update">Check for updates</string>
+    <string name="app_introduce">WeCredit is a safe Blockchain wallet.</string>
+    <string name="noun_explanation">Basic Knowledge</string>
+    <string name="forget_pw">Forget Password</string>
+    <string name="transfer_transactions">Transactions</string>
+    <string name="wallet_safe">Wallet Safety</string>
+    <string name="wallet_operation">User Tutorial</string>
+    <string name="email">Mail</string>
+    <string name="facbook">FaceBook</string>
+    <string name="telegram">Telegram</string>
+    <string name="wechat">WeChat</string>
+    <string name="qq">QQ</string>
+    <string name="keystore_file">Keystore File</string>
+    <string name="qrcode">QR code</string>
+    <string name="export_privte_key_tip">Warning:Export plain private key is very dangerous.We recommend you backup with menmonic or keystore.</string>
+    <string name="camera_tip">Please check around if you are being watched by someone or hidden cameras.</string>
+    <string name="camera_content_tip">Two dimensional code prohibits screenshots, photos and saves. Please ensure that you can directly scan in a safe environment to import wallets.</string>
+    <string name="input_pw_tip"> Password</string>
+    <string name="move_seed_tip">Confirmed!Do you want to remove the mnemonic from this device</string>
+    <string name="sure_user_seed">Confirm mnemonic words</string>
+    <string name="sure_user_seed_tip">Please choose mnemonic words in order and make sure the words are correct.</string>
+    <string name="save_seed">Backup</string>
+    <string name="move_seed">Delete Mnemonic</string>
+    <string name="write_seed_tip">The Mnemonic words are for recovering your wallet,write down correctly on peper and keep in a safe place.</string>
+    <string name="write_seed">Backup the mnemonic words</string>
+    <string name="copy_wallet_now">Please backup your wallet now!</string>
+    <string name="copy_wallet_tip">We highly recommend you write the Mnemonic words(Backup Phrase) on paper and keep it in a safe place,anyone get it can access or spend your assets.</string>
+    <string name="copy_wallet">Backup Now</string>
+    <string name="input_wallet_name_tip">Wallet Name</string>
+    <string name="pw_error_tip">At least 8 characters,better to mix letters,digits,symbols.</string>
+    <string name="input_pw_again">Repeat Password</string>
+    <string name="agree_agreement_tip">Agree on</string>
+    <string name="pw_tip">Password strength is critical to guard your wallet.We can not recover the password,please backup cautiously.</string>
+    <string name="add_new_coin">add new Assets</string>
+    <string name="wallet_surplus">Wallet balance</string>
+    <string name="receipt_address">Please enter the wallet address</string>
+    <string name="input_money">Please enter the amount of money</string>
+    <string name="commission_charge">handling fee</string>
+    <string name="transfer_tip">The transfer has been submitted. Please wait for the miners to deal with it</string>
+    <string name="query_transfer_tip">Please click the currency page to check the result of the transfer</string>
+    <string name="copy_seed_tip">Please backup mnemonic  words</string>
+    <string name="import_wallet_by_seed_tip">Please import by Mnemonic Phrase</string>
+    <string name="seed_mean">what is a mnemonic?</string>
+    <string name="input_seed_tip">Please use space to separate the mnemonic words</string>
+    <string name="setting_wallet_pw_tip">Please set up the password for the wallet</string>
+    <string name="password">Password</string>
+    <string name="sure_password">Repeat Password</string>
+    <string name="begin_import">Start Importing</string>
+    <string name="seed_error">Mnemonic Phrase error</string>
+    <string name="pay">Send</string>
+    <string name="yuan">CNY</string>
+    <string name="dollar">USD</string>
+    <string name="diamonds">diamonds</string>
+    <string name="add_asset">Add Assets</string>
+    <string name="back_up">(please backup)</string>
+    <string name="mnemonic_phrase">Mnemonic Phrase</string>
+    <string name="mnemonic_phrase_content">After creating a wallet,you need to backup mnemonic phrase.A mnemonic phrase is a human readable encrypted private key.Anyone with your menomonic words can access or spend your assets!\nAttention:\n1. Please do not screenshot to save the mnemonic phrase.\n2. Check mnemonic phrase.\n3.Please write down on paper and keep it safe.
+</string>
+
+    <string name="private_question">Private Key</string>
+    <string name="private_content">It is the secret half of your address and is a string of 64 hexadecimal characters. Anyone with your  private key  can access or spend your assets!
+\n
+        Attention:
+        \n1. Please do not screenshot to save the private key.
+        \n2.Please write down on paper and keep it safe,try not to put it in a networking device.
+</string>
+    <string name="keystore_question">Keystore</string>
+    <string name="keystore_content">A Keystore file is an encrypted version of your private key. It is an encryption of your private key that is protected by a password of your choosing.Password is the same important with the keystore.If you forget the private,you will lost your assets.
+</string>
+    <string name="pay_question">How do I transfer/receive?</string>
+    <string name="pay_content">Transfer
+\nIn WeCredit wallet,choose the token in the assets page that you want to send,and input the receiver is address,amount,mining fee and password.
+\nReceive
+\nIn WeCredit wallet,choose the token in the assets page that you want to receive,copy your address,and send it to others.Or you can send QR code to others.</string>
+    <string name="payfail_question">Why transaction failed?</string>
+    <string name="payfail_content">Mining fee is not enough.Make sure mining fee is enough to send the transaction.
+\nTimeout.It will be timeout when encounter crowed network,you can go to the browser to make sure it is succeed or failed,and try send again.
+</string>
+    <string name="forget_question">I forget my password,what is next?</string>
+    <string name="forget_content">When you create wallet,you set the password.
+\nWeCredit does not save password.You can import the mnemonic phrase to set new password.
+\nReset password:Profile-Wallet Tools-Change Password-Import.
+\nYour assets can\'t be found if you forget mnemonic.
+</string>
+    <string name="modify_question">How do I change password?</string>
+    <string name="modify_content">Change password:Profile-Wallet Tools-Change Password.
+</string>
+    <string name="copy_seeed_question">How to backup Mnemonic?</string>
+    <string name="copy_seeed_content">Please backup mnemonic  words in the wallet\'s creating process.Please write down and save it safely.Anyone with your menomonic words can access or spend your assets!
+</string>
+    <string name="export_privatekey_question">How to Export Private Key?</string>
+    <string name="export_privatekey_content">Method:In the page of Profle-Wallet Tools,you can export private key.Please write down on paper and keep it safe,try not to put it in a networking device.Anyone with your private key words can access or spend your assets!
+</string>
+    <string name="import_wallet_question">How to import an existing wallet?</string>
+    <string name="import_wallet_content">In the page of Profle-Wallet Tools,you can  import wallet by menomonic words,keystore or private key.
+\nBy menomonic,input menomonic words,and set new password.
+\nBy keystore,paste keystore file ,and input the password.
+\nBy private key,paste private key,and set new password
+
+</string>
+    <string name="delete_wallet_question">How to delete wallet?</string>
+    <string name="delete_wallet_content">In the page of Profile-Wallet Tools,verify your password and wallet can be deleted.
+\nAttention! WeCredit does not store mnemonic.Please backup mnemonic before you delete wallets,otherwise,you will lose your assets.
+</string>
+    <string name="create_wallet_question">How to create wallet?</string>
+    <string name="create_wallet_content">Click Create Wallet button in WeCredit,and set password.Please backup mnemonic words.
+</string>
+
+    <string name="agreement_question">Dear User,
+
+\nWelcome to using WeCredit!
+\n\nPlease be sure to read carefully  and understand the WeCredit Terms of Service( "the Agreement") to ensure that you fully understand the terms of this agreement.
+\nI Confirmation and Acceptance of the Agreement
+\n1.When you download the WeCredit  and create or import wallet, it is deemed that you have fully read and accepted all the terms of this agreement. This agreement will become effective immediately and binding upon both parties.
+\n2.If you are under 18 years old, or a person with no capacity for civil conduct or a person restricting civil conduct, please use WeCredit under the guidance of parents or guardians.
+\nII Service 
+\nWeCredit provides services for creating or importing wallet, sending and receiving, transaction records, information, etc., and other WeCredit considers necessary.
+The following questions should be understood by the user when accepting the above service.
+\n1.Because of the feature of blockchain :peer to peer,protecting the security of your assets,
+\nWeCredit does not provide following services:
+\n(1)store user password,private key,mnemonic,keystore;
+\n(2)restore user password,private key,mnemonic,keystore;
+\n2.Users should backup  password,private key,mnemonic,keystore by themselves.If password,private key,mnemonic,keystore is lost,WeCredit does not provide recover the wallet,password,private key,mnemonic,keystore.
+\n3.When the user transfers / receives, please confirm the transaction address. Based on the irreversible property of the blockchain, if the address is incorrect, WeCredit cannot help cancel the transaction.
+\n4.Please keep your wallet password, private key, mnemonic, keystore. It is suggested that you copy your mnemonic, keystore and other information, not through the screenshots, WeChat, SMS and other networking methods to save.
+\n5.In the use of the process, please be alert to unofficial fraud, if you find this kind of behavior,can contact us.
+\n6. When you use this product, please comply with the laws and regulations of your country or region.
+
+</string>
+
+
+    <string name="connect_facebook_question">https://www.facebook.com/credittagchain.io/ </string>
+    <string name="connect_telegram_question">https://t.me/credittag</string>
+    <string name="connect_email_question">     consulting@credittag.io
+             \ninnovation@credittag.io
+             \nsponsorship@credittag.io
+             \nrecruitment@credittag.io</string>
+
+    <string name="update_tip">You need to update the application to use\n\n</string>
+    <string name="logoff">logoff</string>
+    <string name="switch_failure">Switch failure</string>
+    <string name="transaction_failure">Transaction failure</string>
+    <string name="import_failure">Import failure</string>
+    <string name="password_reset">wallet exists,do you want to replace with the new password?</string>
+    <string name="same_password">Two inputted password inconsistencies</string>
+    <string name="password_can_not_be_empty">The password can not be empty</string>
+    <string name="agree_privacy_clause">Please agree to the privacy clause</string>
+    <string name="recognition_failure">Image recognition failure</string>
+
+
+
+
+    <string name="restore_error_check">Error of the mnemonic words, please retype</string>
+    <string name="agree">I have read it carefully and have agreed</string>
+    <string name="agree_deal">《Services and privacy clauses》</string>
+    <string name="setting_us"></string>
+    <string name="setting_safe">Security Center</string>
+    <string name="setting_problem">Common problem</string>
+    <string name="move_seed_success">Remove the success of the help word</string>
+    <string name="login_tip">Welcome to WeCredit</string>
+    <string name="new_wallet">NewCash</string>
+    <string name="new_tran">Recent transaction records</string>
+    <string name="version_log">1.Creat,Import and backup wallet;\n2.Support the basic functions of wallet:transfering,receiving and details of transactions.</string>
+    <string name="success">success</string>
+    <string name="fail">fail</string>
+    <string name="create_secret">Terms of Service and Privacy Policy</string>
+</resources>

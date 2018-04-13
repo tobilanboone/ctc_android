@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/ctc_backgrount"
+        android:layout_height="1dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_height="30dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:background="@mipmap/icon_complete"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="60dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:textColor="#D9D9D9"
+                    android:text="------------"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:background="@mipmap/icon_2"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="60dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="#D9D9D9"
+                    android:layout_marginRight="6dp"
+                    android:text="------------"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:background="@mipmap/icon_03"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/create_wallet"
+                    android:textSize="14sp"
+                    android:textColor="#2F5EB2"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/save_seed"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="14sp"
+                    android:textColor="#2F5EB2"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/move_seed"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="35dp"
+                    android:textColor="#BDBDBD"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sure_user_seed"
+                    android:textStyle="bold"
+                    android:textColor="@color/common_color"
+                    android:textSize="18sp" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/sure_user_seed_tip"
+                    android:textColor="@color/ctc_textColor"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycle_select"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="#F4F4F4">
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/restore_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_round_red"
+                    android:drawableLeft="@drawable/ic_error"
+                    android:padding="@dimen/h2"
+                    android:text="@string/restore_error_check"
+                    android:textColor="@color/ctc_textColor"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_un_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="5dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <Button
+                    android:id="@+id/button_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/h10"
+                    android:layout_marginTop="@dimen/h_distance_20"
+                    android:background="#2F5EB2"
+                    android:text="@string/confirm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/p18" />
+            </android.support.v7.widget.LinearLayoutCompat>
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

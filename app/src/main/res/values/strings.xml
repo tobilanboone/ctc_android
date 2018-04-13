@@ -1,0 +1,426 @@
+<resources>
+    <string name="app_name">WeCredit</string>
+    <string name="app_name_upper">ANYBIT</string>
+    <string name="view_empty">没有数据~</string>
+    <string name="share">分享</string>
+    <string name="empty_record">暂无相关交易记录~</string>
+    <string name="empty_contact">暂时没有联系人</string>
+    <string name="view_loading">加载中...~</string>
+    <string name="view_no_network">没有网络~</string>
+    <string name="view_network_error">网络连接异常...</string>
+    <string name="service_fail">出了点小问题,请稍后再试</string>
+    <string name="find_no">功能暂未开放</string>
+    <!--创建钱包-->
+    <string name="account_create">创建钱包</string>
+    <string name="account_name">设置钱包名称</string>
+    <string name="account_restore">恢复钱包</string>
+    <string name="account_restore_tips">请至少恢复一种货币</string>
+    <string name="account_select_tips">请选择一种货币</string>
+    <string name="account_seed">请输入助记词</string>
+    <string name="account_pw">请设置六位交易密码</string>
+    <string name="account_input_pw">请输入六位交易密码</string>
+    <string name="account_login_pw">请设置六位登录密码</string>
+    <string name="restore_pw">请重新设置六位交易密码</string>
+    <string name="account_pw_tip">请务必记住交易密码，否则无法进行交易</string>
+    <string name="account_login_tip">请记住登录密码</string>
+    <string name="coin_add">添加货币</string>
+    <!--钱包-->
+    <string name="wallet_money">总资产</string>
+    <string name="wallet_pay">付款</string>
+    <string name="wallet_receipt">收款</string>
+    <string name="wallet_coin">币种</string>
+    <string name="wallet_asset">资产</string>
+    <string name="wallet_all">数量</string>
+    <string name="wallet_freeze">冻结数量</string>
+    <string name="wallet_restore">恢复钱包</string>
+    <string name="candy">糖果</string>
+    <string name="news">资讯</string>
+
+    <string-array name="sort_item">
+        <item>钱包</item>
+        <item>糖果</item>
+        <item>资讯</item>
+        <item>我的</item>
+    </string-array>
+    <!-- restoredelegate -->
+    <string name="seed_input">请按顺序点击助记词,以确认助记词记录正确</string>
+    <string name="restore_input">请输入助记词</string>
+    <string name="restore_error_checksum">助记词无效，检查是否有拼写错误。</string>
+    <string name="restore_error_check">助记词错误,请重新输入</string>
+    <string name="send_safe">请务必确保助记词的安全</string>
+    <!-- seeddelegaet -->
+    <string name="word_copy">请确认已经保存好如下的钱包助记词并妥善保管，可以用来找回本次创建的钱包。</string>
+    <string name="word_new">触屏生成新的助记词</string>
+    <string name="word_tips">助记词小贴士</string>
+    <string name="word_next">下一步</string>
+    <string name="agree">我已经仔细阅读并已同意</string>
+    <string name="agree_deal">«服务及隐私条款»</string>
+    <string name="finish">完成</string>
+    <string name="sure">确定</string>
+    <!-- Errors -->
+    <string name="error_generic">执行指令时出错</string>
+    <string name="error_could_not_read_wallet">无法读取钱包</string>
+    <!-- tips -->
+    <string name="tips_exit">再按一次退出程序</string>
+
+    <!--交易-->
+    <string name="trade_tip">温馨提示</string>
+    <string name="trade_time">交易时间</string>
+    <string name="trade_pay">付款</string>
+    <string name="trade_id">对方地址已经复制到粘贴板</string>
+    <string name="trade_address_error">地址有误，请检查后重新输入</string>
+    <string name="trade_money_lack">余额不足,请重新输入数额</string>
+    <string name="trade_fail">构建交易失败</string>
+    <string name="trade_receive">收款</string>
+    <string name="trade_address">收款地址</string>
+    <string name="to_address">发款地址</string>
+    <string name="trade_kind">交易类型</string>
+    <string name="trade_message">备注</string>
+    <string name="fee">旷工费用</string>
+    <string name="trade_link">交易ID</string>
+    <string name="trade_tip_content">此页说明交易处理完成，并不\n代表本次交易已经成功，具体交易状态请在\n交易信息列表进行查询</string>
+
+    <string name="scan_qr_code">扫描二维码</string>
+    <string name="scan">扫描二维码</string>
+    <string name="scan_qr">二维码</string>
+    <string name="tips_cash">请输入适当费用，费用过低时可能会影响交\n易速度及成功率</string>
+    <string name="tips_finish">请将信息填写完整</string>
+    <string name="tips_name_empty">钱包名称不能为空</string>
+    <string name="tips_fee_much">手续费过高</string>
+    <string name="tips_name_repetition">钱包名称重复</string>
+    <string name="tips_copy">内容已经复制到粘贴板上</string>
+    <string name="tips_cash_lack">手续费不能过低，否则难以交易</string>
+    <string name="button_skip">跳过</string>
+    <string name="mail_box">请联系邮箱</string>
+    <string name="back">返回</string>
+    <string name="copy">复制</string>
+    <string name="mail_address">info@blocklinker.com</string>
+
+    <!-- FinalizeWalletRestorationFragment -->
+    <string name="wallet_restoration">在恢复钱包时请耐心等候。</string>
+    <string name="wallet_restoration_master_key">创建主钥</string>
+    <string name="wallet_restoration_coin">为 %1$s 创建私钥</string>
+    <string name="wallet_restoration_error">无法恢复钱包。\n\n%1$s</string>
+    <!--error-->
+    <string name="error_camera">无法访问摄像头</string>
+    <string name="error_pw">密码错误</string>
+    <string name="error_state">网络访问异常，请稍后重试</string>
+    <!--market-->
+    <string name="market">行情</string>
+    <!--密码-->
+    <string name="input_word">请设置支付密码</string>
+    <string name="input_pw">请输入钱包密码</string>
+    <string name="input_login">请输入登录密码</string>
+    <!--收付款-->
+    <string name="copy_address">复制地址</string>
+    <string name="address">地址</string>
+    <string name="money">金额</string>
+    <string name="remark">备注</string>
+    <string name="remind">到账提醒</string>
+    <string name="cash">费用</string>
+    <string name="copy_address_ok">地址已复制到粘贴板</string>
+    <string name="copy_private_ok">已复制到粘贴板</string>
+    <string name="copy_pub_ok">公钥已复制到粘贴板</string>
+    <string name="cancel">取消</string>
+    <string name="next">下一步</string>
+    <string name="setting_money">设置收款金额</string>
+    <string name="error_money">请输入正确的金额</string>
+    <!--设置-->
+    <string name="camera_tips">此功能需要摄像头权限</string>
+    <string name="camera_sure">请允许调用系统相机</string>
+    <string name="setting">设置</string>
+    <string name="setting_us">AnyBit支持多种货币的存储及交易，\n 致力于为用户提供更安全、便捷、功能 \n强大的数字资产钱包服务</string>
+    <string name="setting_nick">钱包名称</string>
+    <string name="setting_delete">删除钱包</string>
+    <string name="setting_personal">个人中心</string>
+    <string name="setting_head">头像</string>
+    <string name="loading_">加载中...</string>
+    <string name="setting_safe">安全中心</string>
+    <string name="setting_problem">常见问题</string>
+    <string name="setting_deal">使用协议</string>
+    <string name="setting_secret">隐私条款</string>
+
+    <string name="setting_connect">联系我们</string>
+    <string name="setting_share">推荐分享</string>
+    <string name="setting_download">https://anybit.io/anybit.apk</string>
+    <string name="setting_login_pw">修改登录密码</string>
+    <string name="setting_error_pw">原密码错误</string>
+    <string name="setting_error_two">两次密码不一致</string>
+    <string name="setting_login">每次打开应用重新登录</string>
+    <string name="setting_pw">修改支付密码</string>
+    <string name="setting_default">设置默认货币</string>
+    <string name="setting_language">设置系统语言</string>
+    <string name="setting_key">导出私钥</string>
+    <string name="setting_update">检查更新</string>
+    <string name="setting_updating">下载中...</string>
+    <string name="setting_update_now">更新到最新版本</string>
+    <string name="setting_update_new_now">已是最新版本</string>
+    <string name="setting_update_new_two">优化英文版界面</string>
+    <string name="setting_update_content">发布安卓内测版本，该版本包含以下功能：\n\n 1、支持创建以及恢复钱包\n 2、基于助记词创建钱包 \n 3、支持钱包基本功能：收付款、联系人、资讯详情、交易记录以及详情</string>
+
+
+    <string name="setting_update_">更新</string>
+    <string name="setting_update_tips">版本日志</string>
+    <string name="setting_update_new">是否更新为最新版本</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_chinese">简体中文</string>
+    <string name="setting_english">English</string>
+    <string name="setting_korean">韩文</string>
+    <string name="setting_pw_old">输入旧密码</string>
+    <string name="setting_pw_new">输入新密码</string>
+    <string name="setting_pw_sure">确认新密码</string>
+    <string name="setting_pw_tip">请输入六位数字密码</string>
+    <string name="setting_pw_six">密码需由6位数字组成</string>
+    <!--交易-->
+    <string name="record_name">交易记录</string>
+    <string name="record_unsure">待确认</string>
+    <string name="trade_state">交易状态</string>
+    <string name="record_success">成功</string>
+    <string name="record_detail">详情</string>
+    <string name="record_invalid">无效</string>
+    <string name="record_no">还没有交易记录</string>
+    <!--联系人-->
+    <string name="contact">联系人</string>
+    <string name="contact_delete">删除</string>
+    <string name="contact_add">添加联系人</string>
+    <string name="contact_alter">修改联系人</string>
+    <string name="contact_no">您还没有联系人,赶快去添加吧</string>
+    <string name="contact_nick">昵称：</string>
+    <string name="contact_coin">币种：</string>
+    <string name="contact_address">钱包地址：</string>
+    <string name="contact_input">请输入昵称或地址</string>
+    <!--coinkey-->
+    <string name="ub">UBTC</string>
+    <string name="ub_tips">以下是UBTC的地址和私钥,点击可复制</string>
+    <string name="ub_key">UBTC私钥</string>
+    <string name="private_key">私钥</string>
+    <string name="private_key_tip"> 注意！拥有私钥就可以控制该地址的资产，请储存于可信任的位置，不要分享给其他人</string>
+    <array name="waveSideBarLetters">
+        <item>\u0023</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </array>
+    <string name="user_name">WeCredit</string>
+    <string name="user_number">186***7266</string>
+    <string name="wallet_tool">钱包工具</string>
+    <string name="sys_setting">系统设置</string>
+    <string name="help_center">帮助中心</string>
+    <string name="about_us">关于我们</string>
+    <string name="delete_wallet">删除钱包</string>
+    <string name="title">标题</string>
+    <string name="delete_wallet_tip">钱包被删除后无法找回，请您备份好钱包资产，包括私钥、Keystore、助记词等信息。</string>
+    <string name="cancle">取消</string>
+    <string name="confirm">确认</string>
+    <string name="revise_pw">修改密码</string>
+    <string name="old_pw">原密码</string>
+    <string name="new_pw">新密码</string>
+    <string name="confirm_pw">确认新密码</string>
+    <string name="old_pw_hint">请输入原密码</string>
+    <string name="new_pw_hint">请输入新密码</string>
+    <string name="confirm_pw_hint">请确认新密码</string>
+    <string name="forget_pw_tip">忘记密码？导入助记词或私钥可重置密码</string>
+    <string name="import_now">马上导入</string>
+    <string name="export_private_key">导出私钥</string>
+    <string name="export_pub_key">导出公钥</string>
+    <string name="export_keystore">导出Keystore</string>
+    <string name="create_wallet">创建钱包</string>
+    <string name="import_wallet">导入钱包</string>
+    <string name="select_language">选择语言</string>
+    <string name="select_icon">选择货币</string>
+    <string name="version_tip">当前版本1.0</string>
+    <string name="version_update">版本更新</string>
+    <string name="app_introduce">WeCredit是一款数字货币钱包，为客户提供存储货币、领取糖果、资讯浏览等一系列服务。</string>
+    <string name="noun_explanation">名词解释</string>
+    <string name="forget_pw">忘记密码</string>
+    <string name="transfer_transactions">转账交易</string>
+    <string name="wallet_safe">钱包安全</string>
+    <string name="wallet_operation">钱包操作</string>
+    <string name="email">邮箱</string>
+    <string name="facbook">FaceBook</string>
+    <string name="telegram">Telegram</string>
+    <string name="wechat">WeChat</string>
+    <string name="qq">QQ</string>
+    <string name="keystore_file">Keystore文件</string>
+    <string name="qrcode">二维码</string>
+    <string name="export_privte_key_tip">安全警告：私钥未经加密，导出存在风险，建议使用助记词和Keystore进行备份。</string>
+    <string name="camera_tip">请确认周围无人及摄像头</string>
+    <string name="camera_content_tip">二维码禁止截图、拍照、保存，请确保在安全环境下直接扫描来导入钱包。</string>
+    <string name="input_pw_tip">请输入密码</string>
+    <string name="move_seed_success">移除助记词成功</string>
+    <string name="move_seed_tip">您的助记词备份正确，是否从钱包移除助记词？</string>
+    <string name="sure_user_seed">确认您的钱包助记词</string>
+    <string name="sure_user_seed_tip">请按顺序点击助记词，以确认您的备份助记词正确。</string>
+    <string name="save_seed">备份助记词</string>
+    <string name="move_seed">移除助记词</string>
+    <string name="write_seed_tip">助记词用于恢复钱包或重置钱包密码，请准确抄写到纸上并妥善保管。</string>
+    <string name="write_seed">抄写下您的钱包助记词</string>
+    <string name="copy_wallet_now">请立即备份钱包</string>
+    <string name="copy_wallet_tip">备份钱包：导出【助记词】并抄写到安全的地方，千万不要保存到网络上。然后尝试转入、转出小额资产开始使用。</string>
+    <string name="copy_wallet">立即备份</string>
+    <string name="input_wallet_name_tip">请输入钱包名称</string>
+    <string name="pw_error_tip">不少于8位字符，建议包含大小写、数字、符号</string>
+    <string name="input_pw_again">请重复输入钱包密码</string>
+    <string name="agree_agreement_tip">我已仔细阅读并同意</string>
+    <string name="pw_tip">密码用于保护私钥和交易、非常重要WeCredit不存储密码，请您牢记密码。</string>
+    <string name="add_new_coin">添加新资产</string>
+    <string name="wallet_surplus">钱包余额</string>
+    <string name="receipt_address">请输入收款人钱包地址</string>
+    <string name="input_money">请输入金额</string>
+    <string name="commission_charge">手续费用</string>
+    <string name="transfer_tip">转账已提交，请等待矿工处理</string>
+    <string name="query_transfer_tip">转账结果请点击该币种页面查看</string>
+    <string name="copy_seed_tip">请备份助记词</string>
+    <string name="import_wallet_by_seed_tip">请使用助记词导入</string>
+    <string name="seed_mean">什么是助记词？</string>
+    <string name="input_seed_tip">请输入助记词，按空格分隔。</string>
+    <string name="setting_wallet_pw_tip">请设置钱包密码</string>
+    <string name="password">密码</string>
+    <string name="sure_password">确认密码</string>
+    <string name="begin_import">开始导入</string>
+    <string name="seed_error">助记词无效</string>
+    <string name="pay">转账</string>
+    <string name="yuan">人民币</string>
+    <string name="dollar">美元</string>
+    <string name="diamonds">钻石矿场</string>
+    <string name="add_asset">添加资产</string>
+    <string name="back_up">（请备份）</string>
+    <string name="mnemonic_phrase">什么是助记词？</string>
+    <string name="mnemonic_phrase_content">创建钱包后，会出现一个备份助记词功能，选择备份助记词，输入密码，会出现 12 个单词，每个单词之间有一个空格，这个就是助记词，一个钱包只有一个助记词且不能修改。助记词是私钥的另一种表现形式，具有和私钥同样的功能，在导入钱包中，输入助记词并设置一个密码（不用输入原密码），就能进入钱包并拥有这个钱包的掌控权，就可以把钱包中的代币转移走。助记词只能备份一次，备份后，在钱包中再也不会显示。保存助记词时请注意：
+\n1.请不要截图保存助记词
+\n2.多次核对助记词是否正确
+\n3.一定要将助记词抄写下来，保存到安全的地方
+</string>
+    <string name="private_question">什么是私钥？</string>
+    <string name="private_content">私钥=银行卡号+银行卡密码私钥是指与一个地址(地址是与私钥相对应的公钥的哈希值)相关联的一把密钥，是只有你自己才知道的一串字符，可用来操作账户里的加密货币。创建钱包后，输入密码可以导出私钥，这个私钥属于明文私钥，由 64 位字符串组成，一个钱包只有一个私钥且不能修改。在导入钱包中，输入私钥并设置一个密码（不用输入原密码），就能进入钱包并拥有这个钱包的掌控权，就可以把钱包中的数字资产转移走。
+\n在导出私钥时请注意：
+\n1.请不要截图保存；
+\n2.复制私钥后请保存到安全的地方，尽量不要放在联网的设备里。
+</string>
+    <string name="keystore_question">什么是keystore？</string>
+    <string name="keystore_content">keystore 文件（Linux 系统存储在 ~/.ethereum/keystore 或者 Windows 系统存储在C:\Users&lt;User&gt;\Appdata/Roaming/Ethereum/keystore）是你独有的、用于签署交易的以太坊私钥的加密文件。如果你丢失了这个文件，你就丢失了私钥，意味着你失去了签署交易的能力，意味着你的资金被永久的锁定在了你的账户里。
+\nKeystore的本质是加密后的私钥，Keystore必须配合你的钱包密码来使用，一旦忘记密码，就失去了Keystore的使用权。所以说，备份Keystore和牢记钱包密码缺一不可。
+</string>
+    <string name="pay_question">如何转账/收款？ </string>
+    <string name="pay_content">如何转账/收款？ 在WeCredit钱包里，选择想要交易的资产类型，即可开始交易。
+\n（1）转账
+\n选择转账，输入收款人地址、转账金额，设置手续费，输入钱包密码，即可提交转账。
+\n（2）收款\n选择收款，页面显示收款二维码，付款方可以扫描二维码发起转账，或者收款方点击复制收款地址，发送给付款方。
+</string>
+    <string name="payfail_question">交易失败的原因？</string>
+    <string name="payfail_content">（1）交易手续费不够：建议设置合理交易手续费，确保转账成功率；
+\n（2）矿工打包超时：转账需要矿工打包，遇上网络拥堵时可能会打包超时，遇到这种情况不一定会转账失败，请先前往区块浏览器上查询具体状态，如果确定失败，请重新发送交易，否则请等待矿工打包；
+</string>
+    <string name="forget_question">忘记密码怎么办？</string>
+    <string name="forget_content">忘记密码怎么办？交易密码是创建钱包时的钱包密码。
+\nWeCredit不存储用户密码，如果忘记密码，用户可以用之前备份好的钱包助记词进行导入钱包，再重新设置密码。
+\n重置密码方法：我的-钱包工具-修改密码-导入-使用助记词导入，设置新的密码即可。
+\n如果忘记钱包助记词，您将丢失钱包资产。
+</string>
+    <string name="modify_question">如何修改密码？</string>
+    <string name="modify_content">通过我的-钱包工具-修改密码，验证原密码后可设置新密码。
+</string>
+    <string name="copy_seeed_question">如何备份助记词？ </string>
+    <string name="copy_seeed_content">在创建钱包后，根据提示进入备份助记词环节，请将钱包助记词抄写下来，保存到安全的地方。请妥善保存钱包助记词，不要将助记词给他人，他人一旦拥有了助记词就掌握了您的资产。
+</string>
+    <string name="export_privatekey_question">如何导出私钥？</string>
+    <string name="export_privatekey_content">在我的-钱包工具里可以导出私钥，请将私钥离线保存至安全的地方，不要将私钥给他人，他人一旦拥有了助记词就掌握了您的资产。
+</string>
+    <string name="import_wallet_question">如何导入钱包？</string>
+    <string name="import_wallet_content">在我的-钱包工具里可以导入钱包，通过助记词/keystore/私钥三种方式可以导入您的钱包。
+\n（1）通过助记词导入，输入助记词，并设置新的钱包密码；
+\n（2）通过keystore导入，输入keystore文件，并输入keystore密码；
+\n（3）通过私钥导入，输入私钥，并设置新的钱包密码。
+
+</string>
+    <string name="delete_wallet_question">如何删除钱包？</string>
+    <string name="delete_wallet_content">通过我的-钱包工具，验证钱包密码后，可删除钱包。
+\n重要提示：WeCredit不存储用户的助记词，一旦删除钱包，用户只能通过自己备份的助记词来重新导入钱包，找回资产，请谨慎操作删除钱包功能。
+</string>
+    <string name="create_wallet_question">如何创建钱包？ </string>
+    <string name="create_wallet_content">打开WeCredit，在首页选择创建钱包，设置交易密码，钱包即可创建成功。创建钱包后请备份助记词。
+</string>
+
+    <string name="agreement_question">尊敬的用户：
+\n欢迎使用WeCredit!
+\n请务必认真阅读和理解本《WeCredit使用协议》（以下简称“《协议》”），确保您充分理解本协议中的条款。
+\n一、协议确认
+\n1.您下载WeCredit应用并创建或导入钱包，即视为您已经充分阅读并接受本协议全部条款，本协议立即生效，对双方具有约束力。
+\n2.如果您未满18周岁，或者是无民事行为能力人或限制民事行为能力人，请在父母或监护人指导下使用WeCredit。
+\n
+\n二、服务内容
+\nWeCredit提供创建或导入钱包、转账、收款、交易记录、资讯等其他WeCredit认为有必要的服务。
+\n用户接受上述服务时应了解以下问题
+\n
+\n1.WeCredit秉承着区块链点对点的特点，保护用户的数字资产，不提供以下服务：
+\n(1) 存储用户的钱包密码、私钥、助记词、Keystore;
+\n(2) 找回用户的钱包密码、私钥、助记词、keystore；
+
+\n2.基于上述条款，用户请自行备份WeCredit，备份钱包密码、私钥、助记词、Keystore。如果用户将上述信息丢失，WeCredit无法提供找回钱包服务。
+
+\n3.用户在转账/收款时，请确认转账/收款地址，基于区块链的不可逆属性，如地址有误，WeCredit不能帮撤销转账/收款交易。
+
+\n4.用户请妥善保存您的钱包密码、私钥、助记词、Keystore。建议您抄写您的助记词、Keystore等信息，不要通过截图、微信、短信等联网方式进行保存。
+
+\n5.在使用过程中，请警惕非官方的诈骗行为，如您发现此类行为，可以像我们举报。
+
+\n6.您在使用本产品时，请遵守您所在国家或地区的法律法规。
+</string>
+
+
+    <string name="connect_facebook_question">https://www.facebook.com/credittagchain.io/ </string>
+    <string name="connect_telegram_question">https://t.me/credittag</string>
+    <string name="connect_email_question">     consulting@credittag.io
+             \ninnovation@credittag.io
+             \nsponsorship@credittag.io
+             \nrecruitment@credittag.io</string>
+
+
+    <string name="update_tip">您需要更新应用才能使用\n\n</string>
+    <string name="logoff">注销用户</string>
+    <string name="switch_failure">切换失败</string>
+    <string name="transaction_failure">交易失败</string>
+    <string name="import_failure">导入失败</string>
+    <string name="password_reset">钱包存在，您要用新密码替换吗？</string>
+    <string name="same_password">两次输入的密码不一致</string>
+    <string name="password_can_not_be_empty">密码不能为空</string>
+    <string name="agree_privacy_clause">请同意隐私条款</string>
+    <string name="recognition_failure">图片识别失败</string>
+
+    <string name="setting_version_now"> 当前版本：v</string>
+    <string name="trade_success">交易成功</string>
+    <string name="setting_login_pw_short">密码太短</string>
+    <string name="setting_pw_short">密码太短</string>
+    <string name="login_tip">欢迎来到WeCredit的世界</string>
+    <string name="new_wallet">新建钱包</string>
+    <string name="new_tran">最近交易记录</string>
+    <string name="success">成功</string>
+    <string name="fail">失败</string>
+    <string name="version_log">1.支持创建钱包、导入钱包、备份钱包；\n2.支持钱包基本功能：收款、转账、交易详情。</string>
+    <string name="create_secret">隐私条款</string>
+
+
+</resources>

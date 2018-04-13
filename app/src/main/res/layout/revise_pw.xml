@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#E4E4E4"
+        android:layout_below="@id/toolbar"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:id="@+id/old_pw"
+            android:inputType="textPassword"
+            android:password="true"
+            android:layout_marginTop="50dp"
+            android:hint="@string/old_pw_hint"
+            android:textColor="@color/ctc_textColor"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="#EEEEEE"
+            android:layout_height="1dp"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="@string/new_pw"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginTop="205dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:id="@+id/new_pw_et"-->
+            <!--android:textColor="@color/ctc_textColor"-->
+            <!--android:layout_height="wrap_content" />-->
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:password="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/new_pw"
+            android:hint="@string/new_pw_hint"
+            android:textColor="@color/ctc_textColor"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="#EEEEEE"
+            android:layout_height="1dp"/>
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="@string/confirm_pw"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginTop="264dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:id="@+id/confirm_new_pw_et"-->
+            <!--android:textColor="@color/ctc_textColor"-->
+            <!--android:layout_height="wrap_content" />-->
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:id="@+id/new_pw_again"
+            android:inputType="textPassword"
+            android:password="true"
+            android:hint="@string/confirm_pw_hint"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/ctc_textColor"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="#EEEEEE"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:text="@string/forget_pw_tip"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:id="@+id/import_btn"
+                android:textColor="#2E3D8D"
+                android:text="@string/import_now"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#2F64C4"
+            android:text="@string/confirm"
+            android:id="@+id/btn_next"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="44dp" />
+    </LinearLayout>
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="86dp"
+            android:text="@string/revise_pw"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/ctc_textColor"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/old_pw"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="146dp"
+            android:textSize="16sp"
+            android:id="@+id/old_pw_et"
+            android:textColor="@color/ctc_textColor"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:id="@+id/old_pw"
+            android:layout_marginLeft="88dp"
+            android:layout_alignBottom="@id/old_pw_et"
+            android:hint="@string/old_pw_hint"
+            android:textColor="@color/hint_color"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="315dp"
+            android:layout_marginTop="176dp"
+            android:background="#EEEEEE"
+            android:layout_alignLeft="@id/old_pw_et"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/new_pw"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="205dp"
+            android:textSize="16sp"
+            android:id="@+id/new_pw_et"
+            android:textColor="@color/ctc_textColor"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="88dp"
+            android:id="@+id/new_pw"
+            android:layout_alignBottom="@id/new_pw_et"
+            android:hint="@string/new_pw_hint"
+            android:textColor="@color/hint_color"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="315dp"
+            android:layout_marginTop="235dp"
+            android:background="#EEEEEE"
+            android:layout_alignLeft="@id/old_pw_et"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/confirm_pw"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="264dp"
+            android:textSize="16sp"
+            android:id="@+id/confirm_new_pw_et"
+            android:textColor="@color/ctc_textColor"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="119dp"
+            android:id="@+id/new_pw_again"
+            android:layout_alignBottom="@id/confirm_new_pw_et"
+            android:hint="@string/confirm_pw_hint"
+            android:textColor="@color/hint_color"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="315dp"
+            android:layout_marginTop="294dp"
+            android:background="#EEEEEE"
+            android:layout_alignLeft="@id/old_pw_et"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="308dp"
+            android:textSize="14sp"
+            android:textColor="#999999"
+            android:text="@string/forget_pw_tip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="281dp"
+            android:layout_marginTop="308dp"
+            android:textSize="14sp"
+            android:id="@+id/import_btn"
+            android:textColor="#2E3D8D"
+            android:text="@string/import_now"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="315dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="393dp"
+            android:background="#2F64C4"
+            android:text="@string/confirm"
+            android:id="@+id/btn_next"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="44dp" />-->
+</LinearLayout>

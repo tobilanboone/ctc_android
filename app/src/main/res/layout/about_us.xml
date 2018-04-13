@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#E4E4E4"
+        android:layout_height="0.5dp"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:background="@mipmap/ctc_logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/ctc_textColor"
+        android:textSize="14sp"
+        android:text="@string/version_tip"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:textColor="@color/ctc_textColor"
+        android:textSize="14sp"
+        android:text="@string/app_introduce"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="#E4E4E4"
+        android:layout_marginTop="40dp"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/setting_deal"
+        style="@style/sys_setting"
+        android:id="@+id/use_agreement"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        style="@style/view_style"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/setting_update_tips"
+        style="@style/sys_setting"
+        android:id="@+id/version_log"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        style="@style/view_style"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/version_update"
+        style="@style/sys_setting"
+        android:id="@+id/version_update"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        style="@style/view_style"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/setting_connect"
+        style="@style/sys_setting"
+        android:id="@+id/setting_connect"
+        android:layout_height="wrap_content" />
+</LinearLayout>

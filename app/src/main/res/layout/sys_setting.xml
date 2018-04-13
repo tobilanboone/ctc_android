@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ctc_backgrount"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#E4E4E4"
+        android:layout_below="@id/toolbar"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/select_language"
+        style="@style/sys_setting"
+        android:id="@+id/select_language"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        style="@style/view_style"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/select_icon"
+        style="@style/sys_setting"
+        android:id="@+id/select_icon"
+        android:layout_height="wrap_content" />
+</LinearLayout>

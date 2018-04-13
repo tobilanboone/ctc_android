@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white"
+    android:orientation="vertical">
+
+    <!-- <FrameLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+
+             android:layout_height="wrap_content"
+             android:layout_gravity="right|bottom">
+
+             <View
+                 android:layout_width="0dp"
+                 android:layout_height="@dimen/h2"
+                 android:layout_weight="5" />
+
+             <TextView
+                 android:id="@+id/version_number"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:padding="@dimen/h2"
+                 android:text="1.1.0"
+                 android:textColor="@color/white"
+                 android:textSize="10sp" />
+
+             <View
+                 android:layout_width="0dp"
+                 android:layout_height="@dimen/h2"
+                 android:layout_weight="2" />
+         </LinearLayout>
+
+     </FrameLayout>-->
+
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/version"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/h_distance_20"
+        android:text="@string/setting_update_new"
+        android:textColor="@color/common_color"
+        android:textSize="@dimen/p18" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/h_distance_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/h_distance_20">
+
+        <TextView
+            android:id="@+id/refuse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/h_distance_20"
+            android:layout_marginRight="@dimen/h40"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gray_side"
+            android:gravity="center"
+            android:padding="@dimen/h6"
+            android:textSize="@dimen/p18"
+            android:text="@string/cancel" />
+
+        <TextView
+            android:textSize="@dimen/p18"
+            android:id="@+id/agree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/h_distance_20"
+            android:layout_marginRight="@dimen/h_distance_20"
+            android:layout_weight="1"
+            android:background="@drawable/bg_blue_side"
+            android:gravity="center"
+            android:padding="@dimen/h6"
+            android:text="@string/sure"
+            android:textColor="@color/bgBlue" />
+    </LinearLayout>
+</LinearLayout>

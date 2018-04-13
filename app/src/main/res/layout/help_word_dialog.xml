@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@drawable/qrcode_dialog"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginTop="24dp"
+            android:id="@+id/nor_content"
+            android:gravity="center"
+            android:text="@string/move_seed_tip"
+            android:textColor="#505050"
+            android:textSize="17sp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/ctc_backgrount"
+            android:layout_marginTop="16dp"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/nor_liner"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:id="@+id/nor_cancle"
+                android:text="@string/cancle"
+                android:textColor="#505050"
+                android:layout_height="44dp" />
+            <View
+                android:layout_width="1dp"
+                android:background="@color/ctc_backgrount"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/nor_sure"
+                android:gravity="center"
+                android:text="@string/sure"
+                android:textColor="#2F5EB2 "
+                android:layout_height="44dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

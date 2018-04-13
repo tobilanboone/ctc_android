@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#E4E4E4"
+        android:id="@+id/wallet_tool_view"
+        android:layout_below="@id/toolbar"
+        android:layout_height="0.5dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/wallet_tool_view"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/revise_pw"
+            style="@style/wallet_tool"
+            android:drawableLeft="@mipmap/icon_xgmm"
+            android:text="@string/revise_pw"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="#E4E4E4"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/revise_pw"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="0.5dp"
+            android:id="@+id/export_private_key"
+            style="@style/wallet_tool"
+            android:drawableLeft="@mipmap/icon_dcsy"
+            android:text="@string/export_private_key"
+            android:layout_below="@id/revise_pw"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="#E4E4E4"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/export_private_key"
+            android:layout_height="0.5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="0.5dp"
+            android:visibility="gone"
+            android:id="@+id/export_pub_key"
+            style="@style/wallet_tool"
+            android:drawableLeft="@mipmap/icon_dcsy"
+            android:text="@string/export_pub_key"
+            android:layout_below="@id/export_private_key"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="#F8F9FC"
+            android:layout_below="@id/export_pub_key"
+            android:layout_height="7dp"
+            android:id="@+id/view" />
+
+        <TextView
+            android:id="@+id/create_wallet"
+            style="@style/wallet_tool"
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/export_pub_key"
+            android:drawableLeft="@mipmap/mine_icon_qb_gre"
+            android:text="@string/create_wallet" />
+        <View
+            android:layout_width="match_parent"
+            android:background="#E4E4E4"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/create_wallet"
+            android:layout_height="0.5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="0.5dp"
+            android:id="@+id/import_wallet"
+            style="@style/wallet_tool"
+            android:drawableLeft="@mipmap/icon_drqb"
+            android:text="@string/import_wallet"
+            android:layout_below="@id/create_wallet"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="#E4E4E4"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/import_wallet"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="0.5dp"
+            android:id="@+id/delete_wallet"
+            style="@style/wallet_tool"
+            android:drawableLeft="@mipmap/icon_scqb"
+            android:text="@string/delete_wallet"
+            android:layout_below="@id/import_wallet"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@id/delete_wallet"
+            android:background="#FFF8F9FC"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</RelativeLayout>

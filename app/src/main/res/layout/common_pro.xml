@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#E4E4E4"
+        android:id="@+id/wallet_tool_view"
+        android:layout_below="@id/toolbar"
+        android:layout_height="0.5dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/wallet_tool_view"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/noun_explanation"
+            style="@style/wallet_tool"
+            android:drawableLeft="@mipmap/icon_mcjs"
+            android:text="@string/noun_explanation"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="#E4E4E4"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/noun_explanation"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="0.5dp"
+            android:id="@+id/transfer_transactions"
+            style="@style/wallet_tool"
+            android:drawableLeft="@mipmap/icon_zzjy"
+            android:text="@string/transfer_transactions"
+            android:layout_below="@id/noun_explanation"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="#E4E4E4"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/transfer_transactions"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="0.5dp"
+            android:id="@+id/forget_pw"
+            style="@style/wallet_tool"
+            android:drawableLeft="@mipmap/icn_wjmm"
+            android:text="@string/forget_pw"
+            android:layout_below="@id/transfer_transactions"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="#F8F9FC"
+            android:layout_below="@id/forget_pw"
+            android:layout_height="7dp"
+            android:id="@+id/view" />
+
+        <TextView
+            android:id="@+id/wallet_safe"
+            style="@style/wallet_tool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/view"
+            android:drawableLeft="@mipmap/icon_qbaq"
+            android:text="@string/wallet_safe" />
+        <View
+            android:layout_width="match_parent"
+            android:background="#E4E4E4"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/wallet_safe"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="0.5dp"
+            android:id="@+id/wallet_operation"
+            style="@style/wallet_tool"
+            android:drawableLeft="@mipmap/icon_qbcz"
+            android:text="@string/wallet_operation"
+            android:layout_below="@id/wallet_safe"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@id/wallet_operation"
+            android:background="#FFF8F9FC"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

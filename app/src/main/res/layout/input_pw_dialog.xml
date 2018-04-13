@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@drawable/input_pw_dialog"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/input_pw_tip"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="16dp"
+            android:password="true"
+            android:textColorHint="#8A8A8F"
+            android:textColor="@color/ctc_textColor"
+            android:layout_marginRight="16dp"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:textSize="14sp"
+            android:background="@drawable/pw_style"
+            android:paddingLeft="14dp"
+            android:layout_height="35dp" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/ctc_backgrount"
+            android:layout_marginTop="20dp"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/pw_linear"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:id="@+id/pw_cancle"
+                android:gravity="center"
+                android:text="@string/cancle"
+                android:textColor="#999999"
+                android:layout_height="44dp" />
+            <View
+                android:layout_width="1dp"
+                android:background="@color/ctc_backgrount"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:id="@+id/pw_sure"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="#2F64C4 "
+                android:layout_height="44dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

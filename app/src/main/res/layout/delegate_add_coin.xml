@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="@dimen/h10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="41dp"
+            android:id="@+id/coin_kind"
+            android:background="@drawable/thumb"
+            android:layout_height="41dp"
+            android:src="@mipmap/home_icon_ctc" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="13dp"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/coin_name"
+                android:textColor="@color/ctc_textColor"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="CTC" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/coin_tip"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#BDBDBD"
+                android:text="Credit Tag Chain" />
+
+        </LinearLayout>
+
+
+        <Switch
+            android:layout_marginRight="@dimen/h10"
+            android:switchMinWidth="50dp"
+            android:id="@+id/add_coin_switch"
+            android:checked="true"
+            android:clickable="false"
+            android:track="@drawable/add_icon_switch_bg"
+            android:thumb="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

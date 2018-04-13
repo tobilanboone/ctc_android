@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/ctc_backgrount"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="22dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="@string/wallet_surplus"
+                android:textColor="@color/ctc_textColor"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="22sp"
+                android:id="@+id/coin_money"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:textStyle="bold"
+                android:text="12309"
+                android:gravity="center"
+                android:textColor="#2F64C4 "
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="CTC"
+                android:textColor="@color/ctc_textColor"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:id="@+id/pay_address"
+                android:hint="@string/receipt_address"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="16dp"
+                android:id="@+id/scan_zxing"
+                android:background="@mipmap/icon_sys"
+                android:layout_height="16dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="7dp"
+            android:background="@color/ctc_backgrount"
+            android:layout_height="1dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:id="@+id/pay_money"
+            android:singleLine="true"
+            android:hint="@string/input_money"
+            android:background="@color/white"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="7dp"
+            android:background="@color/ctc_backgrount"
+            android:layout_height="1dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:id="@+id/remark"
+            android:singleLine="true"
+            android:hint="@string/remark"
+            android:background="@color/white"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="7dp"
+            android:background="@color/ctc_backgrount"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="22dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:text="@string/commission_charge"
+                android:textColor="@color/ctc_textColor"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/fixedfee"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:text="1"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:text="CTC"
+                android:textColor="@color/ctc_textColor"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:background="#2F64C4"
+            android:textSize="18sp"
+            android:id="@+id/next"
+            android:textColor="@color/white"
+            android:text="@string/next"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="50dp"
+            android:layout_height="44dp" />
+    </LinearLayout>
+</LinearLayout>

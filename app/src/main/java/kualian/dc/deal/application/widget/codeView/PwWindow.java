@@ -1,0 +1,125 @@
+package kualian.dc.deal.application.widget.codeView;
+
+import android.content.Context;
+import android.graphics.drawable.ColorDrawable;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
+import android.widget.TextView;
+
+import kualian.dc.deal.application.R;
+import kualian.dc.deal.application.callback.OnPwListener;
+
+
+public class PwWindow extends PopupWindow {
+    private CodeView codeView;
+    private LinearLayout contain;
+    private OnPwListener onPwListener;
+    public PwWindow(Context context) {
+
+        init(context);
+    }
+
+    public PwWindow(Context context, OnPwListener onPwListener) {
+
+        this.onPwListener = onPwListener;
+        init(context);
+    }
+
+    private void init(Context context) {
+        View contentView = LayoutInflater.from(context).inflate(R.layout.input_pw_dialog, null);
+        setContentView(contentView);
+        setHeight(ViewGroup.LayoutParams.MATCH_PARENT);
+        setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
+        setFocusable(true);
+        setClippingEnabled(false); // 让PopupWindow同样覆盖状态栏
+        setBackgroundDrawable(new ColorDrawable(0xAA000000)); // 加上一层黑色透明背景
+        initView(contentView);
+    }
+
+    // 弹出PopupWindow
+    public void show(View rootView) {
+        showAtLocation(rootView, Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
+    }
+
+
+    private void initView(View contentView) {
+        EditText password = contentView.findViewById(R.id.password);
+        LinearLayout linearLayout = contentView.findViewById(R.id.pw_linear);
+        TextView cancle = linearLayout.findViewById(R.id.pw_cancle);
+        TextView sure = linearLayout.findViewById(R.id.pw_sure);
+        cancle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dismiss();
+            }
+        });
+        sure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (onPwListener != null){
+                    onPwListener.getPw(password.getText().toString());
+                }
+            }
+        });
+        /*if (isSetting) {
+            final TextView textView = contentView.findViewById(R.id.wallet_pw_tip);
+            textView.setVisibility(View.VISIBLE);
+            textView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dismiss();
+                }
+            });
+            contentView.findViewById(R.id.wallet_pw_tip).setVisibility(View.VISIBLE);
+            ivClose.setVisibility(View.GONE);
+            title.setText(R.string.account_pw);
+        } else {
+            title.setText(R.string.account_input_pw);
+            ivClose.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dismiss();
+                }
+            });
+        }*/
+
+//        final KeyboardView keyboardView = (KeyboardView) contentView.findViewById(R.id.password_input);
+//        codeView = (CodeView) contentView.findViewById(R.id.password_view);
+//        contain =  contentView.findViewById(R.id.code_contain);
+//        codeView.setShowType(CodeView.SHOW_TYPE_PASSWORD);
+//        codeView.setLength(6);
+//        keyboardView.setCodeView(codeView);
+//        codeView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                keyboardView.show();
+//            }
+//        });
+//        codeView.setListener(new CodeView.Listener() {
+//            @Override
+//            public void onValueChanged(String value) {
+//                // TODO: 2017/2/5  内容发生变化
+//            }
+//
+//            @Override
+//            public void onComplete(String value) {
+//                if (onPwListener != null) {
+//                    onPwListener.getPw(value);
+//                }
+//                // TODO: 2017/2/5 输入完成
+//            }
+//        });
+    }
+
+    public CodeView getCodeView() {
+        return codeView;
+    }
+    public LinearLayout getContainView() {
+        return contain;
+    }
+}
